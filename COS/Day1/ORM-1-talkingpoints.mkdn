@@ -1,4 +1,4 @@
-#ORM
+# ORM
 
 Today:
   * What are ORMS?
@@ -8,7 +8,7 @@ Today:
   * Entity classes
   * Persisting Objects and collections
 
-##What are ORMS, and what good are they?
+## What are ORMS, and what good are they?
 
 Pros:
   * Less code (less work)
@@ -22,14 +22,14 @@ Cons:
   * Not as easy as it might seem (impedance sort of ruins the point, doesn't it?)
 
 
-##OO/relaational mismatches
+## OO/relaational mismatches
   * Simple types; String vs varchar
   * Field/references vs cols and rows
   * Relationships are inherently one-way in OO, inherently two-way in
     relational schemas.
   * Inheritance is not a thing in relational databases.
 
-##Red-tape
+## Red-tape
   * Add eclipselink to netbeans
   * Add persistence unit with netbeans
   * persistence.xml
@@ -38,7 +38,7 @@ Cons:
 ## Generating tables from classes
 
 ## Generating classes from tables
-##Entity classes
+## Entity classes
 To be an entity, a class:
   * Must have the @Entity annotation
   * Must have @Id field.
@@ -49,7 +49,7 @@ To be an entity, a class:
   * May extend both entity and non-entity classes, and may _be extended_ by
     non-entity classes
 
-###"Simple" mappings
+### "Simple" mappings
   * Primary keys
     * @GeneratedValue(strategy=.., generator=)
       * AUTO
@@ -68,7 +68,7 @@ To be an entity, a class:
   * @ElementCollection
   * @MapKeyColumn
 
-##Today:
+## Today:
   * What are ORMS?
   * JPA in java
   * Generating tables from classes
@@ -76,5 +76,5 @@ To be an entity, a class:
   * Entity classes
   * Persisting Objects and collections
 
-##Tomorrow:
+## Tomorrow:
   * Relationsips

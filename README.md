@@ -16,15 +16,51 @@ ORM / JPA / JPQL
 Be able to work with databases through an ORM framework. The focus is on
 java/JPA, but the core concepts are widely applicable.
 
-
 ## Plan (starting from Tuesday)
+This week we will use a mixture of oracle documentation/tutorials and the Java
+Persistence wikibook. While the wikibook seems significantly easier to read, it
+is not structured to follow our schedule, and it is overly verbose. The java
+materials on the other hand tend to be too terse, but to the point. Therefore,
+we will be jumping back and forth between these resources, but you may find that
+you prefer one over the other. In that event, it should be possible for you to
+find most relevant information in either, but you may have to look around for it.
 
-### [Day 1](Day1) Introduction to ORM
+### [Day 1](Day1) Introduction to ORM 
 What/why is an ORM, install eclipselink+mysql dependencies, generate tables,
 generate classes (reverse JPA), the persistence unit, the Entity class, the
 EntityManager.
 
-### [Day 2](Day2) - Relationships
+The reading materials are:
+  * [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping)
+    Introdiction and sections 1-2
+  * [Java Persistence wikibook](https://en.wikibooks.org/wiki/Java_Persistence)
+    Read:
+      * the first 3 paragraphs of 3.3 (until "JPA is the latest of several..")
+      * 5 intro titled "Mapping, Round..". Stop at the "Access Type" section
+  * [Oracle persistence tutorial](https://docs.oracle.com/javaee/7/tutorial/persistence-intro001.htm#BNBQA)
+    The language in this resource is somewhat dense. It may be beneficial to
+    read this after the lecture, rather than before.
+    Read:
+      * 37.1 (the intro on the linked page),
+      * 37.1.1 - 37.1.2.1
+      * 37.1.3
+  * [Java Persistence wikibook](https://en.wikibooks.org/wiki/Java_Persistence)
+    (Same resource as before)
+    Read 6.2 "Persisting (Inserting, Updating, Merging)":
+      * 1-1.2.1 (detach vs managed, persist..)
+      * 1.3-1.3.2 (merge)
+
+The following tutorial from netbeans, as well as a couple videos
+Christian made, may help you through the JPA setup process if you forget it
+after the lecture.
+These are _not_ useful learning resources. I recommend only using them if you
+forget how to setup the persistence unit, and do table/class generation with JPA.
+  * [netbeans persistence unit tutorial](http://wiki.netbeans.org/SimpleJPAApplicationWithNetbeans#Create_Persistence_Unit)
+  * [Video JPA setup](https://www.twitch.tv/videos/168683174)
+  * [Video JPA database table -> entityclass](https://www.twitch.tv/videos/168934609)
+  * [Video JPA relationships](https://www.twitch.tv/videos/168939780)
+
+### [Day 2](Day2) - Relationships 
 Relationships, cardinality, directionality.
 
 ### [Day 3](Day3) - Inheritance and JPQL
@@ -43,14 +79,10 @@ Inheritance in OOP vs ER, strategies for inheritance in JPA, queries, facade.
 
 <!--
 ## References
-[Video JPA setup](https://www.twitch.tv/videos/168683174)  
-[Video JPA database table -> entityclass](https://www.twitch.tv/videos/168934609)  
-[Vide JPA relationships](https://www.twitch.tv/videos/168939780)
 
 [Lars' slides](learning-resources/ORM-intro.pdf)  
 <a href="https://en.wikibooks.org/wiki/Java_Persistence" target="_blank">Wikibooks - Java Persistence</a><br>
 <a href="https://en.wikibooks.org/wiki/Java_Persistence/EclipseLink" target="_blank">Wikibooks - EclipseLink</a><br>
-<a href="https://en.wikipedia.org/wiki/Object-relational_mapping" target="_blank">Wikipedia - ORM</a><br>
 <a href="https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html" target="_blank">Oracle Docs - Persistence Package API doc</a><br>
 
 <a href="http://www.oracle.com/technetwork/middleware/ias/toplink-jpa-annotations-096251.html#Basic" target="_blank">Oracle Docs - Annoations</a><br>

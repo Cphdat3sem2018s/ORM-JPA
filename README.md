@@ -49,6 +49,11 @@ The reading materials are:
     Read 6.2 "Persisting (Inserting, Updating, Merging)":
       * 1-1.2.1 (detach vs managed, persist..)
       * 1.3-1.3.2 (merge)
+  * The JPA annotations are listed and documented
+    [here](https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html)
+    (scroll down to "Annotation Types Summary"), and some are better explained
+    [here](http://www.oracle.com/technetwork/middleware/ias/toplink-jpa-annotations-096251.html#Basic).
+    Do not read these, use them to look annotations up if/as you need them.
 
 The following tutorial from netbeans, as well as a couple videos
 Christian made, may help you through the JPA setup process if you forget it
@@ -79,13 +84,6 @@ Inheritance in OOP vs ER, strategies for inheritance in JPA, queries, facade.
 
 <!--
 ## References
-
-[Lars' slides](learning-resources/ORM-intro.pdf)  
-<a href="https://en.wikibooks.org/wiki/Java_Persistence" target="_blank">Wikibooks - Java Persistence</a><br>
-<a href="https://en.wikibooks.org/wiki/Java_Persistence/EclipseLink" target="_blank">Wikibooks - EclipseLink</a><br>
-<a href="https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html" target="_blank">Oracle Docs - Persistence Package API doc</a><br>
-
-<a href="http://www.oracle.com/technetwork/middleware/ias/toplink-jpa-annotations-096251.html#Basic" target="_blank">Oracle Docs - Annoations</a><br>
 
 **Relationships**<br>
 <a href="https://www.javacodegeeks.com/2015/02/jpa-tutorial.html" target="_blank">Javacodegeeks (Chapters 5, 5.1, 5.2, 5.3)</a><br>

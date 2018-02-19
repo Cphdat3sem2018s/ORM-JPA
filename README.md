@@ -7,7 +7,7 @@ ORM / JPA / JPQL
     Be able to:
     * Generate Entity classes from a database.
     * Generate database tables from entity classes.
-    * Work around/with the incongruences between database- and OOP-modelling
+    * Work around/with the incongruences/impedance between database- and OOP-modelling
       (I.e. issues related to inheritance, directionality, and cardinality).
   * Be able to create/read/update/delete entities with the EntityManager
   * Be able to create named / dynamic JPQL queries.

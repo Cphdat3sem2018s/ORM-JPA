@@ -12,7 +12,7 @@ Today:
 
 Pros:
   * Less code (less work)
-  * Abstracts the type of datalayer away (somewhat)
+  * Abstracts the type of data-layer away (somewhat)
   * Allows to stay in OO-paradigm
 
 Cons:
@@ -77,4 +77,4 @@ To be an entity, a class:
   * Persisting Objects and collections
 
 ## Tomorrow:
-  * Relationsips
+  * Relationships

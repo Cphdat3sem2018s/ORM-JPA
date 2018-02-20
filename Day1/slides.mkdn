@@ -1,21 +1,29 @@
-# ORM
+% ORM 1
+% Sigurt Dinesen
+% Introduction to ORM/JPA, with table/class generation and auto-ids
 
-Today:
+## Today:
+
   * What are ORMS?
   * JPA in java
   * Generating tables from classes
   * Generating classes from tables
   * Entity classes
   * Persisting Objects and collections
+  * Auto-generating IDs
 
 ## What are ORMS, and what good are they?
 
-Pros:
+### Pros:
+
   * Less code (less work)
   * Abstracts the type of data-layer away (somewhat)
   * Allows to stay in OO-paradigm
 
-Cons:
+## What are ORMS, and what good are they?
+
+### Cons:
+
   * Obscures what is actually happening
   * But doesn't always obscure it enough
   * Often results in poorly designed databases
@@ -36,10 +44,17 @@ Cons:
   * EntityManager (can be injected with @PersistenceContext)
 
 ## Generating tables from classes
+### DEMO
 
 ## Generating classes from tables
+### DEMO
+
 ## Entity classes
-To be an entity, a class:
+"*Entity*" is what we call something we want to persist with JPA.
+
+## Entity classes
+### To be an entity, a class:
+
   * Must have the @Entity annotation
   * Must have @Id field.
   * Must have a public or protected no-args constructor
@@ -49,6 +64,7 @@ To be an entity, a class:
   * May extend both entity and non-entity classes, and may _be extended_ by
     non-entity classes
 
+## Entity classes
 ### "Simple" mappings
   * Primary keys
     * @GeneratedValue(strategy=.., generator=)
@@ -59,14 +75,20 @@ To be an entity, a class:
       * @{Seq,Table}Generator(name=, table=)
       * Composite
         * @IdClass
-        * @EmbeddableId and @Embeddable (see slide 31 of ORM-intro.pdf)
+        * @EmbeddableId and @Embeddable
   * @Transient
   * Single-object fields
     * @Temporal
     * @Enumerated
+
+## Entity classes
 ### Collections
   * @ElementCollection
   * @MapKeyColumn
+  * Collections of other entity classes will be covered tomorow
+
+## Auto-generating IDs
+Covered in ids-and-basic-persistence.pdf
 
 ## Today:
   * What are ORMS?
@@ -75,6 +97,7 @@ To be an entity, a class:
   * Generating classes from tables
   * Entity classes
   * Persisting Objects and collections
+  * Auto-generating IDs
 
 ## Tomorrow:
   * Relationships

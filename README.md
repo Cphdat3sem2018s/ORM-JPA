@@ -71,9 +71,9 @@ Relationships, cardinality, directionality.
 ### [Day 3](Day3) - Inheritance and JPQL
 Inheritance in OOP vs ER, strategies for inheritance in JPA, queries, facade.
 
-<!--
 ## Exercises
 [Exercise 1 - Basic JPA](https://docs.google.com/document/d/1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME/edit?usp=sharing)<br>
+<!--
 [Exercise 2 - Relationships](https://docs.google.com/document/d/1Juic12T0bjb2sf-9dTuxrKXa1l5QA6ak-wTTINlK4dY/edit?usp=sharing)<br>
 [Exercise 3 - Inheritance](https://docs.google.com/document/d/1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI/edit?usp=sharing)<br>
 [Exercise 4 - JPQL](https://docs.google.com/document/d/18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc/edit?usp=sharing)

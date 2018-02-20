@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Sigurt Dinesen" />
+  <title>ORM 1</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">ORM 1</h1>
+  <p class="author">
+Sigurt Dinesen
+  </p>
+  <p class="date">Introduction to ORM/JPA, with table/class generation and auto-ids</p>
+</div>
+<div id="today" class="slide section level2">
+<h1>Today:</h1>
+<ul>
+<li>What are ORMS?</li>
+<li>JPA in java</li>
+<li>Generating tables from classes</li>
+<li>Generating classes from tables</li>
+<li>Entity classes</li>
+<li>Persisting Objects and collections</li>
+<li>Auto-generating IDs</li>
+</ul>
+</div>
+<div id="what-are-orms-and-what-good-are-they" class="slide section level2">
+<h1>What are ORMS, and what good are they?</h1>
+<h3 id="pros">Pros:</h3>
+<ul>
+<li>Less code (less work)</li>
+<li>Abstracts the type of data-layer away (somewhat)</li>
+<li>Allows to stay in OO-paradigm</li>
+</ul>
+</div>
+<div id="what-are-orms-and-what-good-are-they-1" class="slide section level2">
+<h1>What are ORMS, and what good are they?</h1>
+<h3 id="cons">Cons:</h3>
+<ul>
+<li>Obscures what is actually happening</li>
+<li>But doesn’t always obscure it enough</li>
+<li>Often results in poorly designed databases</li>
+<li>Not as easy as it might seem (impedance sort of ruins the point, doesn’t it?)</li>
+</ul>
+</div>
+<div id="oorelaational-mismatches" class="slide section level2">
+<h1>OO/relaational mismatches</h1>
+<ul>
+<li>Simple types; String vs varchar</li>
+<li>Field/references vs cols and rows</li>
+<li>Relationships are inherently one-way in OO, inherently two-way in relational schemas.</li>
+<li>Inheritance is not a thing in relational databases.</li>
+</ul>
+</div>
+<div id="red-tape" class="slide section level2">
+<h1>Red-tape</h1>
+<ul>
+<li>Add eclipselink to netbeans</li>
+<li>Add persistence unit with netbeans</li>
+<li>persistence.xml</li>
+<li>EntityManager (can be injected with <span class="citation">@PersistenceContext</span>)</li>
+</ul>
+</div>
+<div id="generating-tables-from-classes" class="slide section level2">
+<h1>Generating tables from classes</h1>
+<h3 id="demo">DEMO</h3>
+</div>
+<div id="generating-classes-from-tables" class="slide section level2">
+<h1>Generating classes from tables</h1>
+<h3 id="demo-1">DEMO</h3>
+</div>
+<div id="entity-classes" class="slide section level2">
+<h1>Entity classes</h1>
+<p>“<em>Entity</em>” is what we call something we want to persist with JPA.</p>
+</div>
+<div id="entity-classes-1" class="slide section level2">
+<h1>Entity classes</h1>
+<h3 id="to-be-an-entity-a-class">To be an entity, a class:</h3>
+<ul>
+<li>Must have the <span class="citation">@Entity</span> annotation</li>
+<li>Must have <span class="citation">@Id</span> field.</li>
+<li>Must have a public or protected no-args constructor</li>
+<li>must not be final, or have final methods or instance variables</li>
+<li><em>Should</em> implement Serializable, if instances will handled outside of the entitymanager (detached).</li>
+<li>May extend both entity and non-entity classes, and may <em>be extended</em> by non-entity classes</li>
+</ul>
+</div>
+<div id="entity-classes-2" class="slide section level2">
+<h1>Entity classes</h1>
+<h3 id="simple-mappings">“Simple” mappings</h3>
+<ul>
+<li>Primary keys
+<ul>
+<li><span class="citation">@GeneratedValue</span>(strategy=.., generator=)
+<ul>
+<li>AUTO</li>
+<li>ID</li>
+<li>SEQUENCE</li>
+<li>TABLE</li>
+<li>@{Seq,Table}Generator(name=, table=)</li>
+<li>Composite
+<ul>
+<li><span class="citation">@IdClass</span></li>
+<li><span class="citation">@EmbeddableId</span> and <span class="citation">@Embeddable</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><span class="citation">@Transient</span></li>
+<li>Single-object fields
+<ul>
+<li><span class="citation">@Temporal</span></li>
+<li><span class="citation">@Enumerated</span></li>
+</ul></li>
+</ul>
+</div>
+<div id="entity-classes-3" class="slide section level2">
+<h1>Entity classes</h1>
+<h3 id="collections">Collections</h3>
+<ul>
+<li><span class="citation">@ElementCollection</span></li>
+<li><span class="citation">@MapKeyColumn</span></li>
+<li>Collections of other entity classes will be covered tomorow</li>
+</ul>
+</div>
+<div id="auto-generating-ids" class="slide section level2">
+<h1>Auto-generating IDs</h1>
+<p>Covered in ids-and-basic-persistence.pdf</p>
+</div>
+<div id="today-1" class="slide section level2">
+<h1>Today:</h1>
+<ul>
+<li>What are ORMS?</li>
+<li>JPA in java</li>
+<li>Generating tables from classes</li>
+<li>Generating classes from tables</li>
+<li>Entity classes</li>
+<li>Persisting Objects and collections</li>
+<li>Auto-generating IDs</li>
+</ul>
+</div>
+<div id="tomorrow" class="slide section level2">
+<h1>Tomorrow:</h1>
+<ul>
+<li>Relationships</li>
+</ul>
+</div>
+</body>
+</html>

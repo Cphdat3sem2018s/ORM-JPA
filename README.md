@@ -70,7 +70,7 @@ Relationships, cardinality, directionality.
 
 Reading materials:
   * [Oracle tutorial](https://docs.oracle.com/javaee/7/tutorial/persistence-intro001.htm#BNBQA)
-    Read 37.1.4-37.1.6 (end of chapter). You can skip 37.1.54
+    Read 37.1.4-37.1.6 (end of chapter).
 
 
 ### [Day 3](Day3) - Inheritance and JPQL

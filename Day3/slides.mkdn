@@ -1,6 +1,8 @@
-# ORM Inherritance
+% ORM 3
+% Sigurt Dinesen
+% Inheritance and the Java Persistence Query Language
 
-Previously:
+## Previously:
   * Why/why not ORM?
   * Definition of an entity class in JPA
   * Generating tables from classes
@@ -8,14 +10,14 @@ Previously:
   * Persisting collections in entities
   * Persisting relations between entities
 
-Today:
+## Today:
 
-  * Inherritance strategies in JPA
+  * Inheritance strategies in JPA
+  * Queries in JPQ, with JPQL
 
 ## Inheritance in relational models
 
-  * Draw inheritance diagram (students; this is similar to the one in the JPA
-    wikibook)
+  * (Draw inheritance diagram)
   * There is no such thing as inheritance in relational modelling
   * But we can _implement_ inheritance _in_ a relational model!
 
@@ -106,3 +108,24 @@ Cons:
      even more so than with the JOINED strategy)
   * Support for this is **optional** for JPA providers, so it may not be
     portable, or even possible for you for you.
+
+## Java Persistence Query Language
+
+  * Named queries
+  * "Dynamic" queries
+  * parameters to avoid injection attacks
+  * Note: Objects, not tables!
+
+
+## Java Persistence Query Language
+Switch slides
+
+## Demo time
+<!--
+Dell's customer database in postgresql  
+(because we are awesome, and postgres is awesome, so us + postgres is awesome\*2)
+-->
+
+## Today:
+  * Inheritance strategies in JPA
+  * Queries in JPQ, with JPQL

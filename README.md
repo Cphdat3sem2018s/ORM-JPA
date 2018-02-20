@@ -68,6 +68,11 @@ forget how to setup the persistence unit, and do table/class generation with JPA
 ### [Day 2](Day2) - Relationships 
 Relationships, cardinality, directionality.
 
+Reading materials:
+  * [Oracle tutorial](https://docs.oracle.com/javaee/7/tutorial/persistence-intro001.htm#BNBQA)
+    Read 37.1.4-37.1.6 (end of chapter). You can skip 37.1.54
+
+
 ### [Day 3](Day3) - Inheritance and JPQL
 Inheritance in OOP vs ER, strategies for inheritance in JPA, queries, facade.
 

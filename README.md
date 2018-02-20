@@ -69,12 +69,19 @@ forget how to setup the persistence unit, and do table/class generation with JPA
 Relationships, cardinality, directionality.
 
 Reading materials:
-  * [Oracle tutorial](https://docs.oracle.com/javaee/7/tutorial/persistence-intro001.htm#BNBQA)
-    Read 37.1.4-37.1.6 (end of chapter).
+  * [Oracle tutorial](https://docs.oracle.com/javaee/7/tutorial/persistence-intro001.htm#BNBQA) Read:  
+    37.1.4-37.1.6 (end of chapter).
 
 
 ### [Day 3](Day3) - Inheritance and JPQL
 Inheritance in OOP vs ER, strategies for inheritance in JPA, queries, facade.
+
+Reading materials:
+  * [Java Persistence Wikibook](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) Inheritance chapter.  
+    Skip the XML examples.
+  * [Java Persistence Wikibook](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) JPQL chapter. Read:  
+    1-1.5
+
 
 ## Exercises
 [Exercise 1 - Basic JPA](https://docs.google.com/document/d/1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME/edit?usp=sharing)<br>

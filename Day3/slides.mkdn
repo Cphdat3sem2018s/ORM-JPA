@@ -7,6 +7,7 @@
   * Definition of an entity class in JPA
   * Generating tables from classes
   * Generating classes from tables
+  * The entity manager, and entity lifecycle
   * Persisting collections in entities
   * Persisting relations between entities
 

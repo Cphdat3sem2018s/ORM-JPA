@@ -1,0 +1,18 @@
+% ORM 2
+% Sigurt Dinesen
+% Relationships and the Entity Manager
+
+## Previously:
+  * Why/why not ORM?
+  * Definition of an entity class in JPA
+  * Generating tables from classes
+  * Generating classes from tables
+  * Persisting collections in entities
+
+## Today:
+  * The entity manager, and entity lifecycle
+  * Persisting relations between entities
+
+## Entity Manager
+Switch slides
+

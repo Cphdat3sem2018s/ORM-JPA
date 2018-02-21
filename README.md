@@ -84,34 +84,14 @@ Reading materials:
 
 
 ## Exercises
-[Exercise 1 - Basic JPA](https://docs.google.com/document/d/1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME/edit?usp=sharing)<br>
-<!--
-[Exercise 2 - Relationships](https://docs.google.com/document/d/1Juic12T0bjb2sf-9dTuxrKXa1l5QA6ak-wTTINlK4dY/edit?usp=sharing)<br>
-[Exercise 3 - Inheritance](https://docs.google.com/document/d/1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI/edit?usp=sharing)<br>
-[Exercise 4 - JPQL](https://docs.google.com/document/d/18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc/edit?usp=sharing)
+| Level | Expectation |
+| ------ | ----------- |
+| Green | Ex1, Ex2.1-4, Ex3, Ex4 |
+| Yellow | Ex2.5 |
+| Red | Ex2.6 |
 
-## Study point exercises
-[Study point exercises](https://docs.google.com/document/d/1BKihRmnhl18P5GCzSlO3UnDlUBm5fEaLUalaiTTxev4/edit?usp=sharing)
--->
-
-<!--
-## References
-
-**Relationships**<br>
-<a href="https://www.javacodegeeks.com/2015/02/jpa-tutorial.html" target="_blank">Javacodegeeks (Chapters 5, 5.1, 5.2, 5.3)</a><br>
-<a href="https://www.tutorialspoint.com/jpa/jpa_entity_relationships.htm" target="_blank">Tutorialspoint - Relationships</a><br>
-
-**Inheritance**<br>
-<a href="https://www.javacodegeeks.com/minibook/jpa-minibook" target="_blank">JPA Minibook (Pages 25-33)</a><br>
-<a href="https://en.wikibooks.org/wiki/Java_Persistence/Inheritance" target="_blank">Wikibooks - Persistence</a><br>
-
-**Entity manager**<br>
-<a href="https://www.tutorialspoint.com/jpa/jpa_entity_managers.htm" target="_blank">Tutorialspoint - Entity manager</a><br>
-
-**JPQL**<br>
-[Wikibooks - JPQ](https://en.wikibooks.org/wiki/Java_Persistence/JPQL)  
-this the main resource on JPQL)  
-[JBay Blog - JPQL Tutorial](http://blog.jbaysolutions.com/2014/10/16/jpa-2-tutorial-queries-on-the-model)  
-[JPQL demo part 1](https://drive.google.com/open?id=0BwZfnBsxgR1jYXdqMjVTU3dGTDA)  
-[JPQL demo part 2](https://drive.google.com/open?id=0BwZfnBsxgR1jVWlfd28zN2JYUm8) -- this may not play in the browser, but you can download it.
--->
+  * [Exercise 1 Day 1 - Basic JPA](https://docs.google.com/document/d/1CB9LYW6uzFy6ibe7fLSHGI_5Ymx6kzdSdARNtsNO0ME/edit?usp=sharing) 
+  * [Exercise 2 Day 2 - Relationships](https://docs.google.com/document/d/1Juic12T0bjb2sf-9dTuxrKXa1l5QA6ak-wTTINlK4dY/edit?usp=sharing)
+  * [Exercise 3 Day 3 - Inheritance](https://docs.google.com/document/d/1IiTDPL4wDW_0S8sWAHxH_ijYu9SyB6xzyql7aRnTomI/edit?usp=sharing)
+  * [Exercise 4 Day 3 - JPQL](https://docs.google.com/document/d/18QeY8y6yz0JVo39gQfQ22InDUHtBN29ViFao5s4tQPc/edit?usp=sharing)
+  * [Study point exercises](https://docs.google.com/document/d/1BKihRmnhl18P5GCzSlO3UnDlUBm5fEaLUalaiTTxev4/edit?usp=sharing) Start on these already Wednesday if you can

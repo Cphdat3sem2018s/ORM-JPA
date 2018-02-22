@@ -79,7 +79,7 @@ Inheritance in OOP vs ER, strategies for inheritance in JPA, queries, facade.
 Reading materials:
   * [Java Persistence Wikibook](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) Inheritance chapter.  
     Skip the XML examples.
-  * [Java Persistence Wikibook](https://en.wikibooks.org/wiki/Java_Persistence/Inheritance) JPQL chapter. Read:  
+  * [Java Persistence Wikibook](https://en.wikibooks.org/wiki/Java_Persistence/JPQL) JPQL chapter. Read:  
     1-1.5
 
 

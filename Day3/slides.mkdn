@@ -61,6 +61,7 @@ that the ORM knows which subclass to create each row as.
 Pros:
 
   * Simple, understandable
+  * No joins.jjjj
 
 Cons:
 
@@ -110,6 +111,9 @@ Cons:
   * Support for this is **optional** for JPA providers, so it may not be
     portable, or even possible for you for you.
 
+## Demo
+Demp?
+
 ## Java Persistence Query Language
 
   * Named queries
@@ -122,10 +126,8 @@ Cons:
 Switch slides
 
 ## Demo time
-<!--
-Dell's customer database in postgresql  
-(because we are awesome, and postgres is awesome, so us + postgres is awesome\*2)
--->
+  * Demo of sql injection?
+  * Demo of queries?
 
 ## Today:
   * Inheritance strategies in JPA
